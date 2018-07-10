@@ -192,3 +192,8 @@ def player_stats(player_name)
       if stats[:name] == player_name
         stats.delete(:name)
         player_stats = stats
+      end 
+    end 
+  end 
+  return player_stats 
+end
