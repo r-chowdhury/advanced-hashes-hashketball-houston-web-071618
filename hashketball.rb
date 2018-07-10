@@ -133,7 +133,7 @@ def num_points_scored(player_name)
     players_array = attributes[:players]
     players_array.each do |data_players|
       if data_players[:name] == player_name
-        score = player_details_hash[:points]
+        score = data_players[:points]
       end 
     end 
   end 
