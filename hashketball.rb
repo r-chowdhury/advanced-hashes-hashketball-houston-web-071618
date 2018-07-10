@@ -136,7 +136,6 @@ def num_points(player_name)
           score = player_details_hash[:points]
         end 
       end 
-    end 
   end 
   return score 
 end 
