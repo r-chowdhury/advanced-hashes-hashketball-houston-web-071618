@@ -128,7 +128,6 @@ end
 
 def num_points_scored(player_name)
   score = nil 
-  
   game_hash.each do |team, attributes| #key: home/away, attributes: name, color, players
     players_array = attributes[:players]
     players_array.each do |data_players|
