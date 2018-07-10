@@ -204,7 +204,7 @@ def big_shoe_rebounds
     game_hash.each do | team, team_details_hash|
       team_details_hash[:players].each do | stats |
         if stats[:shoe] > size
-          big_shoes_guy = stats[:shoe]
+          size = stats[:shoe]
           rebounds = stats[:rebounds]
         end
       end
