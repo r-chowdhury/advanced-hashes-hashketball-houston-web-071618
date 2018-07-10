@@ -183,3 +183,12 @@ def player_numbers(team_name)
   end 
   return jersey_numbers 
 end
+
+def player_stats(player_name)
+  player_stats = {}
+  game_hash.each do |team, team_attributes_hash|
+    team_attributes_hash[:players].each do |stats|
+      
+      if stats[:name] == player_name
+        stats.delete(:name)
+        player_stats = stats
