@@ -144,7 +144,7 @@ def shoe_size(player_name) #return shoe size of player
   game_hash.each do |team, attributes|
     players_array = attributes[:players]
     players_array.each do |data_players|
-      if data_players{:name] == player_name
+      if data_players[:name] == player_name
         shoe_size = data_players[:shoe]
       end 
     end 
