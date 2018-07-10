@@ -165,4 +165,5 @@ def team_names
   names = game_hash.collect do |team, team_details_hash|
     team_details_hash[:name] 
   end
+  return names
 end
