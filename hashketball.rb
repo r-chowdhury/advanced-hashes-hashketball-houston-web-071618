@@ -127,4 +127,16 @@ def game_hash
 end
 
 def num_points(player_name)
+  score = nil 
   
+  game_hash.each do |team, attributes| #key: home/away, attributes: name, color, players
+    players_array = attributes[:players]
+      players_array.each do |data_players|
+        if data_players[:name] == player_name
+          score = player_details_hash[:points]
+        end 
+      end 
+    end 
+  end 
+  return score 
+end 
