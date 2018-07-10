@@ -176,3 +176,10 @@ def player_numbers(team_name)
         player.each do |data, data_value|
           if data == :number
             jersey_numbers.push(data_value)
+          end 
+        end 
+      end
+    end 
+  end 
+  return jersey_numbers 
+end
